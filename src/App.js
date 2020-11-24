@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+import Login from './Pages/Login'
+import Menu from './Pages/Menu'
+import Home from './Pages/Home'
 
-function App() {
+
+export default function App() {
+
+  const PrivateRoute = ({ component: Component}) => {
+
+    return <Route
+      render={(props => {
+        let isAuthenticated = sessionStorage.getItem("uuid")
+        if (isAuthenticated) {
+          return <Component {...props} />
+        } else {
+          return <Redirect to={{ pathname: "/" }} />
+        }
+      })}
+
+    />
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login" exact={true} component={Login} />
+        <Route path="/" exact={true} component={Home} />
+        <PrivateRoute path="/menu" component={Menu} />
 
-export default App;
+      </Switch>
+
+    </BrowserRouter>
+  )
+}
