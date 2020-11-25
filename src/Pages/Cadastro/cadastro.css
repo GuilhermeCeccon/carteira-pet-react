@@ -1,0 +1,15 @@
+.container_cadastro {
+  border: 1px solid #D3D3D3;
+  border-radius: 12px;
+  display: block;
+  margin: 5px auto;
+  max-width: 100%;
+  padding: 30px;
+}
+.container {
+  display: block;
+  margin: 5px auto;
+  max-width: 100%;
+  justify-content: center;
+  margin-top: 10%;
+}

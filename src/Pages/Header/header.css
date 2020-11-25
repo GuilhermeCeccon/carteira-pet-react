@@ -1,0 +1,31 @@
+.banner {
+  display: block;
+  margin: 5px auto;
+  max-width: 100%;
+  margin-top: 6%;
+}
+.footer_home {
+  position: relative;
+}
+.text_home {
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.title_home {
+  margin-top: 120px;
+  text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .text_home {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title_home {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,34 @@
+.img_login {
+  display: block;
+  margin: 5px auto;
+  max-width: 50%;
+  padding: 0;
+}
+.login {
+  border: 1px solid #D3D3D3;
+  border-radius: 12px;
+  display: block;
+  margin: 5px auto;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  padding: 30px;
+}
+.container_login {
+  margin-top: 10%;
+}
+.form_login {
+  width: 100%;
+}
+.container_buttons {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .img_login {
+    max-width: 90%;
+  }
+  .form_login {
+    display: block;
+    margin: 5px auto;
+  }
+}
