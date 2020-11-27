@@ -105,7 +105,7 @@ function Login() {
                   <Grid item sm={12} xs={12} style={{ textAlign: "center", color: "red", marginBottom: 5, fontSize: 12 }}>
                     {msg}
                   </Grid>
-                  <Grid item sm={12} xs={12} style={{ textAlign: "center" }}>
+                  <Grid item sm={12} xs={12} style={{ textAlign: "center", marginBottom: 10 }}>
                     <Button
                       onClick={login}
                       variant="outlined"

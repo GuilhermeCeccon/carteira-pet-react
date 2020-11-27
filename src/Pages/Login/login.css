@@ -11,15 +11,18 @@
   margin: 5px auto;
   display: flex;
   max-width: 100%;
+  min-width: 30%;
   justify-content: center;
   padding: 30px;
 }
 .container_login {
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 .form_login {
   width: 100%;
 }
+
 .container_buttons {
   display: flex;
 }

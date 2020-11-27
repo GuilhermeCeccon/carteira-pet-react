@@ -11,16 +11,18 @@ export default function ModalCadastro() {
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [msg, setMsg] = useState("")
 
   let history = useHistory();
 
   const cadastro = () => {
     Firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(() => {
-      history.push("/login");
+      setMsg("Usuário Cadastrado com Sucesso!")
+        history.push("/login");
     })
     .catch(
-      console.log('erro')
+        console.log('erro')
     )
   }
 
@@ -50,6 +52,9 @@ export default function ModalCadastro() {
                 size="small"
                 style={{ width: "100%", marginBottom: 10 }}
               />
+              <Grid item sm={12} xs={12} style={{ textAlign: "center", color: "green", marginBottom: 5, fontSize: 16 }}> 
+                {msg}
+              </Grid>
               <Button
                 onClick={cadastro}
                 variant="outlined"

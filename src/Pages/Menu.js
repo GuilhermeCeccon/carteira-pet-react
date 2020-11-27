@@ -11,8 +11,9 @@ import {
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { useHistory } from "react-router-dom";
 import Firebase from '../services/FirebaseConnect'
-import CrimeRegistro from './screen/CrimeRegistro'
-import CrimeLista from './screen/CrimeLista'
+import RegistroPet from './screen/RegistroPets'
+import ListaPet from './screen/ListaPet'
+import Mensagem from './screen/Mensagem'
 
 
 export default function Menu() {
@@ -51,8 +52,9 @@ export default function Menu() {
                     <Grid item sm={12} xs={12}>
                         <Paper>
                             <MenuList>
-                                <MenuItem onClick={() => setScreen(1)}>CRIMES</MenuItem>
-                                <MenuItem onClick={() => setScreen(2)}>OUTRA COISA</MenuItem>
+                                <MenuItem onClick={() => setScreen(0)}>PETS</MenuItem>
+                                <MenuItem onClick={() => setScreen(1)}>Registro de Pets</MenuItem>
+                                <MenuItem onClick={() => setScreen(2)}>Mensagens</MenuItem>
                             </MenuList>
                         </Paper>
                     </Grid>
@@ -60,15 +62,13 @@ export default function Menu() {
                 <Grid item sm={10} xs={12}>
                     <Paper>
                         {screen === 0 &&
-                            <>
-                                Nenhuma opção selecionada
-                            </>
+                            <ListaPet setScreen={setScreen} />
                         }
                         {screen === 1 &&
-                            <CrimeLista setScreen={setScreen} />
+                             <RegistroPet setScreen={setScreen} />
                         }
                         {screen === 2 &&
-                            <CrimeRegistro setScreen={setScreen} />
+                            <Mensagem setScreen={setScreen} />
                         }
 
                     </Paper>
