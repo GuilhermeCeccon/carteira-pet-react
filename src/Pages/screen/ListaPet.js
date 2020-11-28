@@ -7,7 +7,6 @@ import {
     from '@material-ui/core';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import DeleteIcon from '@material-ui/icons/Delete';
-
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -89,7 +88,7 @@ export default function ListaPet(props) {
                 <Button
                     variant="contained"
                     style={{ width: "100%" }}
-                    onClick={() => props.setScreen(2)}
+                    onClick={() => props.setScreen(1)}
                     color="primary"
                     startIcon={<AddCircleIcon />}>
                     Novo Registro

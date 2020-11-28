@@ -4,7 +4,6 @@ import Firebase from '../../services/FirebaseConnect'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import { useHistory } from "react-router-dom";
-
 import './cadastro.css'
 
 export default function ModalCadastro() {
@@ -22,7 +21,7 @@ export default function ModalCadastro() {
         history.push("/login");
     })
     .catch(
-        console.log('erro')
+      setMsg("Email ou senha incorretos!")
     )
   }
 

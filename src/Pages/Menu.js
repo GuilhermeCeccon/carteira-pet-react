@@ -37,7 +37,6 @@ export default function Menu() {
         <div>
             <Grid container spacing={1}>
                 <Grid item sm={10} xs={12}>
-
                 </Grid>
                 <Grid item sm={2} xs={12}>
                     <Button
@@ -70,10 +69,8 @@ export default function Menu() {
                         {screen === 2 &&
                             <Mensagem setScreen={setScreen} />
                         }
-
                     </Paper>
                 </Grid>
-
             </Grid>
         </div>
     )

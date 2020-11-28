@@ -8,7 +8,6 @@ import {
     Checkbox
 }
     from '@material-ui/core';
-
 import Firebase from '../../services/FirebaseConnect'
 import { useHistory } from "react-router-dom";
 import ImgLogin from '../../Images/login.svg'
@@ -37,9 +36,7 @@ function Login() {
             setPassword(passwordStorage)
             setLembreme(true)
         }
-
     }, [])
-
 
     const login = () => {
 

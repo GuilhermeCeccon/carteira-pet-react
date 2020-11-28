@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer'
 import Firebase from '../../services/FirebaseConnect'
 import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
-
 import './contato.css'
 
 export default function Contato() {

@@ -2,11 +2,7 @@ import React, { useState } from 'react'
 import {
     Button,
     Grid,
-    Paper,
     TextField,
-    Checkbox,
-    MenuList,
-    MenuItem,
 }
     from '@material-ui/core';
 import Firebase from '../../services/FirebaseConnect'
@@ -39,10 +35,10 @@ export default function ResgistroPet(props) {
             .set(objeto)
             .then(() => {
                 limpar()
-                console.log("Salvoooooooooooooooooooooooooo")
+                console.log("Salvo")
             })
-            .catch((err) => {
-                console.log("Erroooooooooooo", err)
+            .catch(() => {
+                console.log("Erro")
             })
     }
 
