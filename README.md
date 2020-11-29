@@ -2,7 +2,7 @@
 Projeto criado para matéria de tópicos especiais em programação ondem usamos o framework react e um banco de dados realtime no Firebase, com autenticação via email e senha.
 
 ### npm install
-Para instalar todas as depências usadaas no projeto.
+Para instalar todas as depências usadas no projeto.
 
 ### npm start
 Para rodar o projeto localmente.
