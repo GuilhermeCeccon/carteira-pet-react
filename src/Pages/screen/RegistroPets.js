@@ -50,23 +50,20 @@ export default function ResgistroPet(props) {
                     label="Nome do Pet"
                     variant="outlined"
                     size="small"
-                    type="email"
                     value={pet}
                     onChange={(e) => setPet(e.target.value)}
                     style={{ width: "100%", marginBottom: 10 }} />
                 <TextField
-                    label="Data Nascimento"
+                    label="Data de Nascimento"
                     variant="outlined"
                     size="small"
-                    type="email"
                     value={dataNasc}
                     onChange={(e) => setDataNasc(e.target.value)}
                     style={{ width: "100%", marginBottom: 10 }} />
                 <TextField
-                    label="Responsavel"
+                    label="Responsável"
                     variant="outlined"
                     size="small"
-                    type="email"
                     value={responsavel}
                     onChange={(e) => setResponsavel(e.target.value)}
                     style={{ width: "100%", marginBottom: 10 }} />

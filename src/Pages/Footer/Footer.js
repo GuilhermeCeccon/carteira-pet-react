@@ -8,8 +8,8 @@ export default class components extends Component {
     return (
       <div>
         <Container maxWidth="xl" className="footer">
-          <p>RA: 1116633</p>
           <p>Nome: Guilherme Ceccon</p>
+          <p>RA: 1116633</p>
           <p>Email: 1116633@imed.edu.br</p>
         </Container>
       </div>

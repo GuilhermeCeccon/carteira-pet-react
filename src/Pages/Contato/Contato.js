@@ -42,9 +42,7 @@ const salvarMensagem = () => {
         .then(() => {
             limpar()
             setMsg("Mensagem Enviada com Sucesso!")
-            setInterval(() => {
-              history.push("/");
-            }, 1000);
+            history.push("/");
         })
         .catch((err) => {
           setMsg("Erro ao enviar, tente novamente mais tarde.")
@@ -74,7 +72,7 @@ const salvarMensagem = () => {
               onChange={(e) => setEmail(e.target.value)}
               style={{ width: "100%", marginBottom: 10 }} />
             <TextField
-              label="Asunto"
+              label="Assunto"
               variant="outlined"
               size="small"
               value={assunto}
